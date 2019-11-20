@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NiceRatingBar">
+        <attr name="nrb_ratingStatus">
+            <enum name="Disable" value="0" />
+            <enum name="Enable" value="1" />
+        </attr>
+        <attr name="nrb_starFullResource" format="reference" />
+        <attr name="nrb_starEmptyResource" format="reference" />
+        <attr name="nrb_starHalfResource" format="reference" />
+        <attr name="nrb_starImageWidth" format="dimension" />
+        <attr name="nrb_starImageHeight" format="dimension" />
+        <attr name="nrb_starImagePadding" format="dimension" />
+        <attr name="nrb_starTotal" format="integer" />
+        <attr name="nrb_rating" format="float" />
+    </declare-styleable>
+</resources>

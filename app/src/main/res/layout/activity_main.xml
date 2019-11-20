@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.kaelli.niceratingbar.NiceRatingBar
+        android:id="@+id/niceRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:nrb_starTotal="5"
+        app:nrb_starImageWidth="24dp"
+        app:nrb_starImageHeight="24dp"
+        app:nrb_starFullResource="@drawable/ic_star_black_16dp"
+        app:nrb_starEmptyResource="@drawable/ic_star_border_black_16dp"
+        app:nrb_starHalfResource="@drawable/ic_star_half_black_16dp"
+        app:nrb_rating="4.7"
+        app:nrb_ratingStatus="Enable"
+        app:nrb_starImagePadding="4dp"/>
+</FrameLayout>
