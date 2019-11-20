@@ -1,7 +1,7 @@
 # NiceRatingBar
 作者：KaelLi [https://www.kaelli.com](https://www.kaelli.com)  
 ----
-** NiceRatingBar是一个简单的、比Android原生RatingBar更好用的评分控件。**
+**NiceRatingBar是一个简单的、比Android原生RatingBar更好用的评分控件。**
 
 ## 特点
 * 支持点击评分
