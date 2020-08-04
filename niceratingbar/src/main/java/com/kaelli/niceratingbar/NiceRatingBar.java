@@ -134,7 +134,7 @@ public class NiceRatingBar extends LinearLayout {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if (mRatingStatus == RatingStatus.Enable && !mBoundaryList.isEmpty()) {
-            setRating(calculateRating(event.getRawX()));
+            setRating(calculateRating(event.getX()));
             if (event.getAction() == MotionEvent.ACTION_DOWN) return true;
         }
         return super.onTouchEvent(event);
@@ -145,7 +145,7 @@ public class NiceRatingBar extends LinearLayout {
         super.onLayout(changed, l, t, r, b);
         if (mBoundaryList.isEmpty()) {
             for (int index = 0; index < mStarTotal; index++) {
-                mBoundaryList.add(index == 0 ? getLeft() : mBoundaryList.get(index - 1) + Math.round(mStarWidth) + Math.round(mStarPadding));
+                mBoundaryList.add(index == 0 ? 0 : mBoundaryList.get(index - 1) + Math.round(mStarWidth) + Math.round(mStarPadding));
             }
         }
     }
